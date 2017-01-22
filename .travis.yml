@@ -15,8 +15,12 @@ install:
   - sudo npm install -g bower
   - npm --version
   - go get github.com/beego/bee
-  - go get
+  - go get github.com/ModuleAB/ModuleAB
 
 script:
+  - cd $GOPATH/src/ModuleAB/ModuleAB/server
   - make
+  - cd $GOPATH/src/ModuleAB/ModuleAB/agent
+  - make
+
 
