@@ -13,6 +13,7 @@ install:
   - sudo ln -s /usr/bin/nodejs /usr/bin/node
   - npm --version
   - sudo npm install -g bower
+  - bower -version
   - go get github.com/beego/bee
   - go get github.com/ModuleAB/ModuleAB
 
