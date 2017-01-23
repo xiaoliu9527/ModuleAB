@@ -4,8 +4,6 @@ sudo: required
 go:
   - tip
 
-go_import_path: moduleab_server
-
 before_script:
   - sudo apt-get install python-software-properties
   - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
@@ -23,4 +21,7 @@ script:
   - cd $GOPATH/src/ModuleAB/ModuleAB/agent
   - make
 
-
+notifications:
+  tonychee7000:
+    on_success: never
+    on_failure: never
