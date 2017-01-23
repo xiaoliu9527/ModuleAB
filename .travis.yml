@@ -9,7 +9,7 @@ before_script:
   - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 install:
-  - sudo apt-get install nodejs npm
+  - sudo apt-get install nodejs
   - npm --version
   - sudo npm install -g bower
   - bower -version
@@ -23,6 +23,5 @@ script:
   - make
 
 notifications:
-  tonychee7000:
-    on_success: never
-    on_failure: never
+  on_success: never
+  on_failure: never
