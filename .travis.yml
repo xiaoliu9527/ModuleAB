@@ -9,7 +9,7 @@ before_script:
   - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 install:
-  - sudo apt-get install nodejs
+  - sudo apt-get install nodejs npm
   - npm --version
   - sudo npm install -g bower
   - bower -version
